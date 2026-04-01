@@ -1,29 +1,35 @@
-# 💡 BMI Driven Insurance Cost Prediction
+# 💡 BMI Driven Insurance Cost Prediction 🚀
+
+🔗 **Live App:** https://medical-insurance-vedant.streamlit.app/
+🔗 **GitHub Repository:** https://github.com/vedantnachankar856-sketch/insurance-
+🔗 **LinkedIn:** https://www.linkedin.com/in/vedant-nachankar-6396783b1
+
+---
 
 ## 📌 Project Overview
 
-This project focuses on analyzing and predicting **medical insurance costs** based on various personal and lifestyle factors, with a special focus on **BMI (Body Mass Index)**.
+This project focuses on predicting **medical insurance charges** using Machine Learning by analyzing various personal and health-related factors, especially **BMI (Body Mass Index)**.
 
-Using Machine Learning techniques, this project identifies how different features like age, BMI, smoking habits, and number of children affect insurance charges.
+BMI plays a crucial role in determining insurance costs because it reflects a person’s health risk — higher BMI is often linked to higher medical expenses and insurance premiums ([IndiaFirst Life Insurance][1]).
 
 ---
 
 ## 🎯 Objective
 
-* Analyze the impact of **BMI on insurance costs**
+* Analyze the relationship between **BMI and insurance charges**
 * Perform **Exploratory Data Analysis (EDA)**
-* Build a **Machine Learning model** to predict insurance charges
-* Understand key factors influencing medical expenses
+* Build a **Machine Learning model** for prediction
+* Deploy the model using **Streamlit Web App**
 
 ---
 
 ## 📊 Dataset Description
 
-The dataset contains information about individuals and their insurance charges.
+The dataset contains information about individuals and their insurance costs.
 
 ### 🔑 Features:
 
-* **Age** → Age of the person
+* **Age** → Age of the individual
 * **Sex** → Gender
 * **BMI** → Body Mass Index
 * **Children** → Number of dependents
@@ -31,23 +37,23 @@ The dataset contains information about individuals and their insurance charges.
 * **Region** → Residential area
 * **Charges** → Medical insurance cost (Target Variable)
 
-👉 These features are commonly used in insurance prediction models to estimate costs based on health and lifestyle factors ([GitHub][1])
+👉 Factors like BMI, age, and smoking significantly influence insurance premiums due to associated health risks ([LinkedIn][2]).
 
 ---
 
 ## 🔍 Exploratory Data Analysis (EDA)
 
-* Visualized relationships between BMI and insurance charges
-* Identified patterns for smokers vs non-smokers
-* Analyzed how age and BMI together impact cost
-* Checked distribution of features
+* Visualized BMI vs insurance charges 📈
+* Compared smokers vs non-smokers 🚬
+* Analyzed age impact on costs
+* Checked feature distributions
 
 ### 📌 Key Insights:
 
-* Smokers have significantly higher insurance charges
-* Higher BMI often leads to increased medical costs
-* Age is a major factor in determining insurance cost
-* Combination of smoking + high BMI leads to highest charges
+* Smokers have significantly higher charges
+* Higher BMI → Higher insurance cost
+* Age strongly influences medical expenses
+* Combination of smoking + high BMI = highest charges
 
 ---
 
@@ -56,13 +62,13 @@ The dataset contains information about individuals and their insurance charges.
 * Handled missing values
 * Encoded categorical variables
 * Feature selection
-* Prepared data for model training
+* Data transformation for model training
 
 ---
 
 ## 🤖 Model Building
 
-* Applied Machine Learning algorithms (e.g., Linear Regression)
+* Applied Machine Learning algorithms
 * Trained model on dataset
 * Predicted insurance charges
 
@@ -70,13 +76,24 @@ The dataset contains information about individuals and their insurance charges.
 
 ## 📈 Model Evaluation
 
-* Evaluated using metrics like:
+Model performance evaluated using:
 
-  * R² Score
-  * MAE (Mean Absolute Error)
-  * RMSE (Root Mean Squared Error)
+* **R² Score**
+* **Mean Absolute Error (MAE)**
+* **Root Mean Squared Error (RMSE)**
 
-👉 These metrics help measure how accurately the model predicts insurance costs ([GitHub][2])
+---
+
+## 🌐 Streamlit Web App
+
+An interactive web application built using **Streamlit** where users can:
+
+✅ Enter personal details
+✅ Get predicted insurance cost instantly
+✅ Experience real-time ML predictions
+
+👉 Try it here:
+🔗 https://medical-insurance-vedant.streamlit.app/
 
 ---
 
@@ -86,49 +103,57 @@ The dataset contains information about individuals and their insurance charges.
 * Pandas & NumPy
 * Matplotlib & Seaborn
 * Scikit-learn
-* Jupyter Notebook
+* Streamlit
 
 ---
 
 ## 📂 Project Structure
 
 ```
-📁 Insurance-Cost-Prediction
+📁 insurance-project
 │── BMI_Driven_Insurance_Costs.ipynb
-│── README.md
+│── app.py
+│── model.pkl
 │── requirements.txt
+│── README.md
 ```
 
 ---
 
-## ▶️ How to Run
+## ▶️ How to Run Locally
 
 1. Clone the repository
 
 ```
-git clone https://github.com/your-username/insurance-project.git
+git clone https://github.com/vedantnachankar856-sketch/insurance-
 ```
 
-2. Install dependencies
+2. Navigate to project folder
+
+```
+cd insurance-
+```
+
+3. Install dependencies
 
 ```
 pip install -r requirements.txt
 ```
 
-3. Run the notebook
+4. Run Streamlit app
 
 ```
-jupyter notebook
+streamlit run app.py
 ```
 
 ---
 
 ## 📌 Future Improvements
 
-* Add more advanced models (Random Forest, XGBoost)
-* Deploy using Streamlit 🌐
+* Use advanced models (Random Forest, XGBoost)
 * Improve feature engineering
-* Build interactive dashboard
+* Add more interactive visualizations
+* Deploy on cloud platforms
 
 ---
 
@@ -137,15 +162,25 @@ jupyter notebook
 **Vedant Nachankar**
 
 🔗 LinkedIn:
-[www.linkedin.com/in/vedant-nachankar-6396783b1](http://www.linkedin.com/in/vedant-nachankar-6396783b1)
+https://www.linkedin.com/in/vedant-nachankar-6396783b1
 
 ---
 
-## ⭐ If you like this project
+## ⭐ Support
 
-Give it a ⭐ on GitHub and share it!
+If you like this project:
+
+* ⭐ Star this repo
+* 🔗 Share on LinkedIn
+* 💬 Give feedback
 
 ---
 
-[1]: https://github.com/adiag321/Medical-Insurance-Cost-Prediction?utm_source=chatgpt.com "GitHub - adiag321/Medical-Insurance-Cost-Prediction: A Project to analyze and predict the cost of Medical costs of patients and evaluate the model using various Performance Metrics."
-[2]: https://github.com/mhdee740/insurance-charges-prediction-linear-regression?utm_source=chatgpt.com "GitHub - mhdee740/insurance-charges-prediction-linear-regression: Predict insurance charges with linear regression; Python project offers a concise EDA-to-model workflow with feature engineering, training, and evaluation 🐙."
+## 💬 Conclusion
+
+This project demonstrates how **Machine Learning + Data Analysis** can be used to predict real-world insurance costs based on health and lifestyle factors like BMI.
+
+---
+
+[1]: https://www.indiafirstlife.com/knowledge-center/life-insurance/impact-of-bmi-on-term-insurance-premium?utm_source=chatgpt.com "Impact of BMI on Term Insurance Premiums"
+[2]: https://www.linkedin.com/posts/chisom-edeh-8509512ab_healthcare-insurance-activity-7333661510331752448-RDip?utm_source=chatgpt.com "How smoking, age, and BMI affect health insurance costs | Jennifer Edeh posted on the topic | LinkedIn"
